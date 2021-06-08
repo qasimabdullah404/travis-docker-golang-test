@@ -1,0 +1,8 @@
+dist: focal
+language: shell
+services:
+  - docker
+script:
+  - docker pull golang:1.16-alpine
+  - docker pull alpine:latest
+  - echo "Done!!!"
