@@ -1,8 +1,10 @@
-dist: focal
+dist: xenial
 language: shell
 services:
   - docker
 script:
-  - docker pull golang:1.16-alpine
   - docker pull alpine:latest
-  - echo "Done!!!"
+  - docker pull postgres:13
+  - docker pull golang:1.16-alpine
+  - docker pull golang:1.13-alpine3.10
+  - echo "Done!!"
