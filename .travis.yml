@@ -5,11 +5,7 @@ services:
 script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin hub.docker.com
   - docker pull alpine:latest
-  - docker images
   - docker pull postgres:13
-  - docker images
   - docker pull golang:1.16-alpine
-  - docker images
   - docker pull golang:1.13-alpine3.10
-  - docker images
   - echo "Done!!"
